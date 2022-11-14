@@ -68,7 +68,7 @@ public class UserProfileService {
 
     public byte[] downloadUserProfileImage(UUID userProfileId) {
        UserProfile user = getUserProfileOrThrow(userProfileId);
-       String path = String.format("%s/%s", BucketName.PROFILE_IMAGE.getBucketName(), user.getUserProfileId());
+       String path = String.format("%s/%s/%s", BucketName.PROFILE_IMAGE.getBucketName(), user.getUserProfileId(), user.getUserProfileImageLink());
 
        return user.getUserProfileImageLink()
                .map(key -> fileStore.download(path, key))
