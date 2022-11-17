@@ -1,4 +1,4 @@
-package com.roknows.awsimageupload.bucket;
+package com.roknows.awsmp4upload.bucket;
 
 public enum BucketName {
     PROFILE_IMAGE("erochest-image-upload");

@@ -1,4 +1,4 @@
-package com.roknows.awsimageupload.filestore;
+package com.roknows.awsmp4upload.filestore;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.services.s3.AmazonS3;

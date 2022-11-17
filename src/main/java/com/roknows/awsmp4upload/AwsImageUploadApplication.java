@@ -1,4 +1,4 @@
-package com.roknows.awsimageupload;
+package com.roknows.awsmp4upload;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.roknows.awsimageupload.config;
+package com.roknows.awsmp4upload.config;
 
 import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.AWSStaticCredentialsProvider;
