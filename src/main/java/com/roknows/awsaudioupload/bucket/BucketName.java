@@ -1,7 +1,7 @@
-package com.roknows.awsmp4upload.bucket;
+package com.roknows.awsaudioupload.bucket;
 
 public enum BucketName {
-    PROFILE_IMAGE("erochest-image-upload");
+    PROFILE_IMAGE("roknows-hackathon-1");
 
     private final String bucketName;
 

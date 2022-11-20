@@ -1,7 +1,7 @@
-package com.roknows.awsmp4upload.profile;
+package com.roknows.awsaudioupload.profile;
 
-import com.roknows.awsmp4upload.bucket.BucketName;
-import com.roknows.awsmp4upload.filestore.FileStore;
+import com.roknows.awsaudioupload.bucket.BucketName;
+import com.roknows.awsaudioupload.filestore.FileStore;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -9,21 +9,19 @@ import org.springframework.web.multipart.MultipartFile;
 import java.io.IOException;
 import java.util.*;
 
-import static org.apache.http.entity.ContentType.*;
-
 @Service
-public class Mp4DownloadService {
+public class AudioDownloadService {
 
     private final FileStore fileStore;
 
     @Autowired
-    public Mp4DownloadService(FileStore fileStore) {
+    public AudioDownloadService(FileStore fileStore) {
         this.fileStore = fileStore;
     }
 
 
 
-    public void uploadUserProfileImage(UUID userProfileId, MultipartFile file) {
+    public void uploadUserProfileImage( MultipartFile file) {
         //1. check if image is not empty
 
         //2. check if file is an image
@@ -39,7 +37,7 @@ public class Mp4DownloadService {
         metadata.put("Content-Length", String.valueOf(file.getSize()));
 
         String path = String.format("%s", BucketName.PROFILE_IMAGE.getBucketName());
-        String filename = String.format("%s-%s", file.getOriginalFilename(), UUID.randomUUID());
+        String filename = String.format("%s-%s", UUID.randomUUID(), file.getOriginalFilename());
 
         try{
             fileStore.save(path, filename, Optional.of(metadata), file.getInputStream());

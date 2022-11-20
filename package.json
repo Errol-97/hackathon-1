@@ -1,0 +1,19 @@
+{
+  "name": "aws-mp4-upload-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Errol-97/hackathon-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Errol-97/hackathon-1/issues"
+  },
+  "homepage": "https://github.com/Errol-97/hackathon-1#readme",
+  "description": ""
+}

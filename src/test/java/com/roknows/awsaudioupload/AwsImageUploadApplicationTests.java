@@ -1,4 +1,4 @@
-package com.roknows.awsmp4upload;
+package com.roknows.awsaudioupload;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

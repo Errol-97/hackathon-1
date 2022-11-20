@@ -1,13 +1,13 @@
-package com.roknows.awsmp4upload;
+package com.roknows.awsaudioupload;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AwsImageUploadApplication {
+public class AwsAudioUploadApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AwsImageUploadApplication.class, args);
+		SpringApplication.run(AwsAudioUploadApplication.class, args);
 	}
 
 }
